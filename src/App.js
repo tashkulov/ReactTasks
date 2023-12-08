@@ -1,25 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import { ComponentWay, MainContent, Footer } from './Events,Components/ComponentWay';
+import HomeworkEvents from './Events,Components/homeworkEvents';
+import HomeWorkProps from './JSX,PROPS/HomeWorkProps';
+import Homework from './JSX,PROPS/homework';
+import PortalHomework from './Portal,Children/PortalHomeworks';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Homework/> */}
+     {/* <HomeWorkProps/> */}
+    {/* <HomeworkEvents
+     btnTitle="Click"
+     btnTitle2="Submit"
+     btnTitle3="onMouseDown"
+     placeholder="you clicked placeholder"
+     placeholder2="you clicked second placeholder"
+     onClick={event =>console.log("you clicked")}
+     onChange={(event) =>console.log("you changed",event.target.value)}
+     onBlur={(event) =>console.log("you have blured")}
+     onFocus={(event) =>console.log("you have focused")}
+     onDoubleClick={(event)=>console.log('you have doubleClicked')}
+     onContextMenu={(event)=>console.log("you что-то сделал короче")}
+     onMouseDown={(event)=>console.log('you have onMouseDown')}
+     
+    /> */}
+     {/* <ComponentWay/> */}
+    
+    <PortalHomework
+    container={document.body}
+    >
+    <button>Click</button>
+    </PortalHomework>
+
+
     </div>
   );
 }
 
 export default App;
+
+
+// import React, { useState } from 'react';
+// import PortalHomework from './Portal,Children/PortalHomeworks';
+
+// const App = () => {
+//   const [showModal, setShowModal] = useState(false);
+
+//   const openModal = () => {
+//     setShowModal(true);
+//   };
+
+//   const closeModal = () => {
+//     setShowModal(false);
+//   };
+
+//   return (
+//     <div>
+//       <button onClick={openModal}>Open Modal</button>
+
+//       {showModal && (
+//         <PortalHomework onClose={closeModal}>
+//           <h2>Modal Content</h2>
+//           <p>This is some modal content.</p>
+//           <button onClick={closeModal}>Close Modal</button>
+//         </PortalHomework>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default App;
