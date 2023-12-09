@@ -1,7 +1,12 @@
+import Children from './Children';
 import { ComponentWay, MainContent, Footer } from './Events,Components/ComponentWay';
 import HomeworkEvents from './Events,Components/homeworkEvents';
 import HomeWorkProps from './JSX,PROPS/HomeWorkProps';
 import Homework from './JSX,PROPS/homework';
+import HomeworkChildren from './Portal,Children/HomeworkChildren';
+import ChildComponent1 from './Portal,Children/HomeworkChildren';
+import ChildComponent2 from './Portal,Children/HomeworkChildren';
+// import { HomeworkChildren, ChildComponent1, ChildComponent2 } from './Portal,Children/HomeworkChildren';
 import PortalHomework from './Portal,Children/PortalHomeworks';
 
 function App() {
@@ -25,12 +30,22 @@ function App() {
      
     /> */}
      {/* <ComponentWay/> */}
-    
+     {/* <div id="portal-root"></div>
+
     <PortalHomework
     container={document.body}
     >
     <button>Click</button>
-    </PortalHomework>
+    </PortalHomework> */}
+      <HomeworkChildren>Hello whats up </HomeworkChildren> 
+      <HomeworkChildren>my name is nuris</HomeworkChildren> 
+
+
+      
+      
+
+
+
 
 
     </div>

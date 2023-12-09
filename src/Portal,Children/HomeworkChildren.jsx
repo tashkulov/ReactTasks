@@ -1,12 +1,12 @@
 import React from 'react';
 
 const HomeworkChildren = (props) => {
-    return (
-        <div>
-        <h1>Parent Component</h1>
-      {props.children}
-        </div>
-    );
-};
+  return (        
+    <div style={{alignItems:'center'}}  >
+      <button style={{ backgroundColor: 'red',width:'400px', height:'300px'}}>{props.children}</button>
+    </div>                        
+  );
+}
+
 
 export default HomeworkChildren;
