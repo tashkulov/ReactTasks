@@ -1,15 +1,31 @@
-import Children from './Children';
-import { ComponentWay, MainContent, Footer } from './Events,Components/ComponentWay';
-import HomeworkEvents from './Events,Components/homeworkEvents';
-import HomeWorkProps from './JSX,PROPS/HomeWorkProps';
-import Homework from './JSX,PROPS/homework';
-import HomeworkChildren from './Portal,Children/HomeworkChildren';
-import ChildComponent1 from './Portal,Children/HomeworkChildren';
-import ChildComponent2 from './Portal,Children/HomeworkChildren';
+// import Children from './Children';
+// import { ComponentWay, MainContent, Footer } from './Events,Components/ComponentWay';
+// import HomeworkEvents from './Events,Components/homeworkEvents';
+// import HomeWorkProps from './JSX,PROPS/HomeWorkProps';
+// import Homework from './JSX,PROPS/homework';
+// import HomeworkChildren from './Portal,Children/HomeworkChildren';
+// import ChildComponent1 from './Portal,Children/HomeworkChildren';
+// import ChildComponent2 from './Portal,Children/HomeworkChildren';
 // import { HomeworkChildren, ChildComponent1, ChildComponent2 } from './Portal,Children/HomeworkChildren';
-import PortalHomework from './Portal,Children/PortalHomeworks';
+// import PortalHomework from './Portal,Children/PortalHomeworks';
+import CombinedComp from "./React(mini-todo)/CombinedComp";
+import SecondTask from "./React(mini-todo)/Secondtask";
 
 function App() {
+  const inputProps = {
+    placeholder: 'Enter',
+    backgroundColor: 'lightblue',
+    width: '200px',
+    height: '30px',
+  };
+
+  const buttonProps = {
+    backgroundColor: 'green',
+    color: 'white',
+    fontWeight: 'bold',
+    btnTitle: 'Click',
+  };
+
   return (
     <div className="App">
      {/* <Homework/> */}
@@ -37,8 +53,12 @@ function App() {
     >
     <button>Click</button>
     </PortalHomework> */}
-      <HomeworkChildren>Hello whats up </HomeworkChildren> 
-      <HomeworkChildren>my name is nuris</HomeworkChildren> 
+      {/* <HomeworkChildren>Hello whats up </HomeworkChildren> 
+      <HomeworkChildren>my name is nuris</HomeworkChildren>  */}
+
+
+    {/* <CombinedComp inputProps={inputProps} buttonProps={buttonProps} /> */}
+    <SecondTask/>
 
 
       
