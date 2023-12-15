@@ -10,6 +10,8 @@
 // import PortalHomework from './Portal,Children/PortalHomeworks';
 import CombinedComp from "./React(mini-todo)/CombinedComp";
 import SecondTask from "./React(mini-todo)/Secondtask";
+import ItemList from "./UseCallbackAndUseMemo";
+import Counter from "./UseStateAndUseEffect";
 
 function App() {
   const inputProps = {
@@ -58,13 +60,12 @@ function App() {
 
 
     {/* <CombinedComp inputProps={inputProps} buttonProps={buttonProps} /> */}
-    <SecondTask/>
+    {/* <SecondTask/> */}
 
 
+      {/* <Counter/> */}
+      <ItemList/>
       
-      
-
-
 
 
 

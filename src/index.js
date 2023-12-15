@@ -20,6 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval(tick,1000)
 root.render(
     // element
+    
     <App />
 
 );
