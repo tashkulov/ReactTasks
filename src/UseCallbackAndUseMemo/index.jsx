@@ -19,7 +19,9 @@ const ItemList = () => {
         console.log(`Clicked on item with index: ${index}`);
     }, []);
 
-    const filteredItems = useMemo(() => items.filter((item, index) => index % 2 === 0), [items]);
+    const filteredItems = useMemo(() => 
+    items.filter((item, index) => index % 2 === 0)
+    ,[items]);
 
     return (
         <div>

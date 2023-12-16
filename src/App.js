@@ -1,32 +1,24 @@
-// import Children from './Children';
-// import { ComponentWay, MainContent, Footer } from './Events,Components/ComponentWay';
-// import HomeworkEvents from './Events,Components/homeworkEvents';
-// import HomeWorkProps from './JSX,PROPS/HomeWorkProps';
-// import Homework from './JSX,PROPS/homework';
-// import HomeworkChildren from './Portal,Children/HomeworkChildren';
-// import ChildComponent1 from './Portal,Children/HomeworkChildren';
-// import ChildComponent2 from './Portal,Children/HomeworkChildren';
-// import { HomeworkChildren, ChildComponent1, ChildComponent2 } from './Portal,Children/HomeworkChildren';
-// import PortalHomework from './Portal,Children/PortalHomeworks';
-import CombinedComp from "./React(mini-todo)/CombinedComp";
-import SecondTask from "./React(mini-todo)/Secondtask";
-import ItemList from "./UseCallbackAndUseMemo";
-import Counter from "./UseStateAndUseEffect";
+
+import Content from "./UseRefAndUseContent/Content";
+import  Header from "./UseRefAndUseContent/Header";
+import ThemeProvider from "./UseRefAndUseContent/ThemeProvider";
+
 
 function App() {
-  const inputProps = {
-    placeholder: 'Enter',
-    backgroundColor: 'lightblue',
-    width: '200px',
-    height: '30px',
-  };
+  // const inputProps = {
+  //   placeholder: 'Enter',
+  //   backgroundColor: 'lightblue',
+  //   width: '200px',
+  //   height: '30px',
+  // };
 
-  const buttonProps = {
-    backgroundColor: 'green',
-    color: 'white',
-    fontWeight: 'bold',
-    btnTitle: 'Click',
-  };
+  // const buttonProps = {
+  //   backgroundColor: 'green',
+  //   color: 'white',
+  //   fontWeight: 'bold',
+  //   btnTitle: 'Click',
+  // };
+
 
   return (
     <div className="App">
@@ -64,45 +56,16 @@ function App() {
 
 
       {/* <Counter/> */}
-      <ItemList/>
-      
-
-
-
+      {/* <ItemList/> */}
+      {/* <TextInput/> */}
+  
+      <ThemeProvider>
+        <Header/>
+        <Content/>
+      </ThemeProvider>
     </div>
   );
 }
 
 export default App;
 
-
-// import React, { useState } from 'react';
-// import PortalHomework from './Portal,Children/PortalHomeworks';
-
-// const App = () => {
-//   const [showModal, setShowModal] = useState(false);
-
-//   const openModal = () => {
-//     setShowModal(true);
-//   };
-
-//   const closeModal = () => {
-//     setShowModal(false);
-//   };
-
-//   return (
-//     <div>
-//       <button onClick={openModal}>Open Modal</button>
-
-//       {showModal && (
-//         <PortalHomework onClose={closeModal}>
-//           <h2>Modal Content</h2>
-//           <p>This is some modal content.</p>
-//           <button onClick={closeModal}>Close Modal</button>
-//         </PortalHomework>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default App;
